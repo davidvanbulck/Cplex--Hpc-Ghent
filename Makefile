@@ -24,7 +24,7 @@ OBJ		= $(SRC:.cpp=.o)
 CXXFLAGS	= -D_GLIBCXX_USE_CXX11_ABI=0					#Use older version of g++ (Newer versions of Linux not yet supported)
 
 # Specify below the path were your cplex code is
-DIR		= ~/Cplex--HPC-Ghent
+DIR		= ~/Cplex--Hpc-Ghent
 	
 scheduling: $(DIR)/*.cpp
 	$(CC) $(CARGS) $(CFLAGS) $(DIR)/*.cpp -I$(INC) $(CPPLIB) -lm -o scheduling
