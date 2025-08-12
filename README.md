@@ -19,5 +19,5 @@ To run the cplex code on HPC, follow the following three steps.
 
 4) Submit the job on HPC $ qsub runScheduling.sh
 
-5) Check the output files. The standard output stream is stored in runSudoku.sh.o[job id], the standard error stream in runScheduling.sh.o[job id].
+5) Check the output files. The standard output stream is stored in runScheduling.sh.o[job id], the standard error stream in runScheduling.sh.e[job id].
 

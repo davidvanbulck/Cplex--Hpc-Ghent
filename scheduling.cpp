@@ -111,7 +111,7 @@ main(int argc, char** argv)
 
       // TODO TODO TODO TODO
       // LIMIT THE THREADS!!
-	cplex.setParam(IloCplex::Param::Threads, 12);
+	cplex.setParam(IloCplex::Param::Threads, 6);
 
       if (cplex.solve()) {
           cout << "Solution status: " << cplex.getStatus() << endl;

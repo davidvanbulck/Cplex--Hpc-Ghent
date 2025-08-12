@@ -1,0 +1,62 @@
+g++ -m64 -g -DIL_STD -I/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include -I/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//cplex/include -I/include ~/Cplex--HPC-Ghent/*.cpp -I -L-L/lib/x86-64_linux/static_pic -L/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//cplex/lib/x86-64_linux/static_pic -lilocplex -lcplex -L/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/lib/x86-64_linux/static_pic -lconcert -lpthread -lm -o scheduling
+Tried aggregator 2 times.
+MIP Presolve eliminated 0 rows and 1 columns.
+MIP Presolve modified 224 coefficients.
+Aggregator did 232 substitutions.
+Reduced MIP has 984 rows, 768 columns, and 2208 nonzeros.
+Reduced MIP has 456 binaries, 0 generals, 0 SOSs, and 464 indicators.
+Presolve time = 0.01 sec. (2.14 ticks)
+Found incumbent of value 9305.000000 after 0.01 sec. (5.27 ticks)
+Probing fixed 0 vars, tightened 583 bounds.
+Probing changed sense of 224 constraints.
+Probing time = 0.01 sec. (9.23 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 224 rows and 224 columns.
+Reduced MIP has 760 rows, 544 columns, and 1760 nonzeros.
+Reduced MIP has 232 binaries, 0 generals, 0 SOSs, and 464 indicators.
+Presolve time = 0.00 sec. (1.75 ticks)
+Probing fixed 0 vars, tightened 2 bounds.
+Probing time = 0.01 sec. (4.46 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 760 rows, 544 columns, and 1760 nonzeros.
+Reduced MIP has 232 binaries, 0 generals, 0 SOSs, and 464 indicators.
+Presolve time = 0.00 sec. (1.11 ticks)
+Probing time = 0.00 sec. (2.66 ticks)
+MIP emphasis: hidden feasible solutions.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 6 threads.
+Root relaxation solution time = 0.00 sec. (2.30 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                         9305.0000        0.0000      148  100.00%
+      0     0        0.0000    74     9305.0000        0.0000      148  100.00%
+      0     0        6.7049    11     9305.0000      Cuts: 12      173   99.93%
+      0     0      187.7776    54     9305.0000      Cuts: 65      266   97.98%
+      0     0      677.9298    41     9305.0000     Cuts: 134      328   92.71%
+      0     0      677.9298    32     9305.0000     Cuts: 143      381   92.71%
+      0     0      677.9298    28     9305.0000      Cuts: 71      404   92.71%
+      0     0      677.9298     7     9305.0000       Cuts: 5      412   92.71%
+      0     0      677.9298     5     9305.0000      Cuts: 13      420   92.71%
+*     0+    0                         3044.0000      677.9298      420   77.73%
+*     0+    0                         1193.0000      677.9298      420   43.17%
+*     0+    0                         1158.0000      677.9298      420   41.46%
+      0     1      677.9298     5     1158.0000      677.9298      420   41.46%
+Elapsed time = 0.14 sec. (103.29 ticks, tree = 0.01 MB, solutions = 4)
+
+Implied bound cuts applied:  54
+Flow cuts applied:  29
+Mixed integer rounding cuts applied:  46
+Gomory fractional cuts applied:  2
+
+Root node processing (before b&c):
+  Real time             =    0.14 sec. (102.93 ticks)
+Parallel b&c, 6 threads:
+  Real time             =    0.08 sec. (65.80 ticks)
+  Sync time (average)   =    0.03 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.22 sec. (168.73 ticks)
+Solution status: Optimal
+ Optimal Value = 1158

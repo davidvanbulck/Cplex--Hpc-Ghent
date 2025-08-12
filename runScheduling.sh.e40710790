@@ -1,0 +1,130 @@
+
+The following have been reloaded with a version change:
+  1) cluster/joltik => cluster/doduo
+  2) env/slurm/joltik => env/slurm/doduo
+  3) env/software/joltik => env/software/doduo
+  4) env/vsc/joltik => env/vsc/doduo
+
+Lmod has detected the following error: The following module(s) are unknown:
+"CPLEX/22.1.1-GCCcore-11.2.0"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "CPLEX/22.1.1-GCCcore-11.2.0"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+If you don't understand the warning or error, contact the helpdesk at
+hpc@ugent.be 
+
+
+In file included from /kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloanyset.h:22,
+                 from /kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/ilomodel.h:26,
+                 from /kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//cplex/include/ilcplex/ilocplex.h:27,
+                 from /user/gent/419/vsc41980/Cplex--HPC-Ghent/scheduling.cpp:23:
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloany.h:32:24: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+   32 | typedef IloArray<IloAny> IloAnyArrayBase;
+      |                        ^
+In file included from /kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/ilomodel.h:25,
+                 from /kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//cplex/include/ilcplex/ilocplex.h:27,
+                 from /user/gent/419/vsc41980/Cplex--HPC-Ghent/scheduling.cpp:23:
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloset.h:529:54: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  529 |         typedef IloFunction<name2(Ilo,X),name2(Ilo,Y)> name2(Ilo,name2(name2(X,name2(To,Y)),Function)); \
+      |                                                      ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloanyset.h:297:1: note: in expansion of macro ‘ILO_DECLARE_FUNCTION’
+  297 | ILO_DECLARE_FUNCTION(Num,Any)
+      | ^~~~~~~~~~~~~~~~~~~~
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloset.h:529:54: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  529 |         typedef IloFunction<name2(Ilo,X),name2(Ilo,Y)> name2(Ilo,name2(name2(X,name2(To,Y)),Function)); \
+      |                                                      ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloanyset.h:300:1: note: in expansion of macro ‘ILO_DECLARE_FUNCTION’
+  300 | ILO_DECLARE_FUNCTION(Any,Num)
+      | ^~~~~~~~~~~~~~~~~~~~
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloset.h:529:54: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  529 |         typedef IloFunction<name2(Ilo,X),name2(Ilo,Y)> name2(Ilo,name2(name2(X,name2(To,Y)),Function)); \
+      |                                                      ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloanyset.h:301:1: note: in expansion of macro ‘ILO_DECLARE_FUNCTION’
+  301 | ILO_DECLARE_FUNCTION(Any,NumVar)
+      | ^~~~~~~~~~~~~~~~~~~~
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloset.h:529:54: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  529 |         typedef IloFunction<name2(Ilo,X),name2(Ilo,Y)> name2(Ilo,name2(name2(X,name2(To,Y)),Function)); \
+      |                                                      ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloanyset.h:302:1: note: in expansion of macro ‘ILO_DECLARE_FUNCTION’
+  302 | ILO_DECLARE_FUNCTION(Any,NumSetVar)
+      | ^~~~~~~~~~~~~~~~~~~~
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloset.h:529:54: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  529 |         typedef IloFunction<name2(Ilo,X),name2(Ilo,Y)> name2(Ilo,name2(name2(X,name2(To,Y)),Function)); \
+      |                                                      ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloanyset.h:304:1: note: in expansion of macro ‘ILO_DECLARE_FUNCTION’
+  304 | ILO_DECLARE_FUNCTION(Int,Any)
+      | ^~~~~~~~~~~~~~~~~~~~
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloset.h:529:54: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  529 |         typedef IloFunction<name2(Ilo,X),name2(Ilo,Y)> name2(Ilo,name2(name2(X,name2(To,Y)),Function)); \
+      |                                                      ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloanyset.h:307:1: note: in expansion of macro ‘ILO_DECLARE_FUNCTION’
+  307 | ILO_DECLARE_FUNCTION(Any,Int)
+      | ^~~~~~~~~~~~~~~~~~~~
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloset.h:529:54: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  529 |         typedef IloFunction<name2(Ilo,X),name2(Ilo,Y)> name2(Ilo,name2(name2(X,name2(To,Y)),Function)); \
+      |                                                      ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloanyset.h:308:1: note: in expansion of macro ‘ILO_DECLARE_FUNCTION’
+  308 | ILO_DECLARE_FUNCTION(Any,IntVar)
+      | ^~~~~~~~~~~~~~~~~~~~
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloset.h:529:54: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  529 |         typedef IloFunction<name2(Ilo,X),name2(Ilo,Y)> name2(Ilo,name2(name2(X,name2(To,Y)),Function)); \
+      |                                                      ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloanyset.h:309:1: note: in expansion of macro ‘ILO_DECLARE_FUNCTION’
+  309 | ILO_DECLARE_FUNCTION(Any,IntSetVar)
+      | ^~~~~~~~~~~~~~~~~~~~
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloset.h:529:54: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  529 |         typedef IloFunction<name2(Ilo,X),name2(Ilo,Y)> name2(Ilo,name2(name2(X,name2(To,Y)),Function)); \
+      |                                                      ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloanyset.h:310:1: note: in expansion of macro ‘ILO_DECLARE_FUNCTION’
+  310 | ILO_DECLARE_FUNCTION(Any,Any)
+      | ^~~~~~~~~~~~~~~~~~~~
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloset.h:529:54: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  529 |         typedef IloFunction<name2(Ilo,X),name2(Ilo,Y)> name2(Ilo,name2(name2(X,name2(To,Y)),Function)); \
+      |                                                      ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloanyset.h:310:1: note: in expansion of macro ‘ILO_DECLARE_FUNCTION’
+  310 | ILO_DECLARE_FUNCTION(Any,Any)
+      | ^~~~~~~~~~~~~~~~~~~~
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloset.h:529:54: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  529 |         typedef IloFunction<name2(Ilo,X),name2(Ilo,Y)> name2(Ilo,name2(name2(X,name2(To,Y)),Function)); \
+      |                                                      ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloanyset.h:311:1: note: in expansion of macro ‘ILO_DECLARE_FUNCTION’
+  311 | ILO_DECLARE_FUNCTION(Any,AnyVar)
+      | ^~~~~~~~~~~~~~~~~~~~
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloset.h:529:54: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  529 |         typedef IloFunction<name2(Ilo,X),name2(Ilo,Y)> name2(Ilo,name2(name2(X,name2(To,Y)),Function)); \
+      |                                                      ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/iloanyset.h:312:1: note: in expansion of macro ‘ILO_DECLARE_FUNCTION’
+  312 | ILO_DECLARE_FUNCTION(Any,AnySetVar)
+      | ^~~~~~~~~~~~~~~~~~~~
+In file included from /kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/ilosolution.h:34,
+                 from /kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/ilomodel.h:825,
+                 from /kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//cplex/include/ilcplex/ilocplex.h:27,
+                 from /user/gent/419/vsc41980/Cplex--HPC-Ghent/scheduling.cpp:23:
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/ilohash.h:589:69: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  589 | class IloAddressHashTable : public IloEnvHashTable<IloAny, ValueType> {
+      |                                                                     ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/ilohash.h: In constructor ‘IloAddressHashTable<ValueType>::IloAddressHashTable(IloMemoryManager, IloInt)’:
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/ilohash.h:592:51: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  592 |                 :IloEnvHashTable<IloAny, ValueType>(env,
+      |                                                   ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/ilohash.h: In constructor ‘IloAddressHashTable<ValueType>::IloAddressHashTable(IloEnv, IloInt)’:
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/ilohash.h:598:51: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  598 |                 :IloEnvHashTable<IloAny, ValueType>(env,
+      |                                                   ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/ilohash.h: At global scope:
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/ilohash.h:713:62: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  713 | class IloAny2AnyHashTable : public IloAddressHashTable<IloAny> {
+      |                                                              ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/ilohash.h: In constructor ‘IloAny2AnyHashTable::IloAny2AnyHashTable(IloMemoryManager, IloInt)’:
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/ilohash.h:716:45: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  716 |                 : IloAddressHashTable<IloAny>(env, size) {}
+      |                                             ^
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/ilohash.h: In constructor ‘IloAny2AnyHashTable::IloAny2AnyHashTable(IloEnv, IloInt)’:
+/kyukon/home/apps/CO7/haswell-ib/software/CPLEX/12.6//concert/include/ilconcert/ilohash.h:718:45: warning: ignoring attributes on template argument ‘IloAny’ {aka ‘void*’} [-Wignored-attributes]
+  718 |                 : IloAddressHashTable<IloAny>(env, size) {}
+      |                                             ^

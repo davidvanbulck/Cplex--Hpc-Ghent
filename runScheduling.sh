@@ -12,10 +12,13 @@
 # Memory
 #PBS -l mem=16gb
 
-# Move to the working directory
-# Alternatively: $ cd  /user/gent/419/vsc41980/gurobi/sudoku_code
-# Change into your directory (find it via $pwd)
-cd /user/gent/419/vsc41980/Cplex--HPC-Ghent
+# Move to the working directory (Replace by your own path if needed)
+cd ~/Cplex--Hpc-Ghent
+
+# Load modules -> go to golett: cplex not available on all clusters
+module swap cluster/doduo
+#module load CPLEX/12.6
+module load CPLEX/22.1.1-GCCcore-11.2.0
 
 # Compile the program
 make scheduling
