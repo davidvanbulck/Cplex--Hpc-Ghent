@@ -109,6 +109,10 @@ main(int argc, char** argv)
 
       cplex.setParam(IloCplex::Param::Emphasis::MIP, 4);
 
+      // TODO TODO TODO TODO
+      // LIMIT THE THREADS!!
+	cplex.setParam(IloCplex::Param::Threads, 12);
+
       if (cplex.solve()) {
           cout << "Solution status: " << cplex.getStatus() << endl;
           cout << " Optimal Value = " << cplex.getObjValue() << endl;
